@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inspection System</title>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+    <div class="page-wrapper">
+        <div class="page-header navbar navbar-fixed-top">
+
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <div class="menu-toggler sidebar-toggler">
+                        <span></span>
+                    </div>
+                    <a href="#">
+                        <img src="/assets/images/logo.svg" alt="Inspection System" class="logo-default" />
+                        <img src="/assets/images/logo1.svg" alt="Dubai Municipality" class="logo-default1">
+                    </a>
+
+                </div>
+                <!-- END LOGO -->
+
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown dropdown-quick-sidebar-toggler">
+                            <div class="search">
+                                <input type="name" class="form-control" name="query" placeholder="Search...">
+                                <a href="javascript:;" class="btn submit md-skip">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="droddown dropdown-separator">
+                            <span class="separator"></span>
+                        </li>
+
+                        <li class="page-date-wrapper">
+                            <div class="page-date">
+                                <div class="page-date-in">
+                                    <span aria-hidden="true">
+                                        <img src="/assets/images/clock-icon.png">
+                                    </span>
+                                    <span class="span_clock_wr" id="clock">
+                                        <label class="time_wr">11:33</label>
+                                        <span class="time_pm_am">AM</span>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        <li class="droddown dropdown-separator">
+                            <span class="separator"></span>
+                        </li>
+
+                        <li class="time-wp-main flag-icon-arabic">
+                            <div class="arabic-icon">
+
+
+                                <a href="#" class="btn blue-ebonyclay">
+                                    <img src="/assets/images/arabic-button-white.svg" class="img-flag-hover">
+                                </a>
+
+                            </div>
+
+                        </li>
+
+                        <li class="droddown dropdown-separator">
+                            <span class="separator"></span>
+                        </li>
+
+                        <!-- USER LOGIN DROPDOWN -->
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i aria-hidden="true" class="icon-user-following"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li class="menudrop-log">
+                                    <div class="m-dropdown__header m--align-center">
+                                        <div class="m-card-user m-card-user--skin-light">
+                                            <div class="m-card-user__pic">
+                                                <i aria-hidden="true" class="icon-user-following"></i>
+                                            </div>
+                                            <div class="m-card-user__details">
+                                                <span class="m-card-user__name m--font-weight-500">Mark Andre</span>
+                                                <a href="" class="m-card-user__email m--font-weight-300 m-link">mark.andre@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-user"></i>My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-calendar"></i>Change Password
+                                    </a>
+                                </li>
+
+
+
+                                <li class="logout-button">
+                                    <a href="@Html.Partial("~/Areas/en/Views/account/partialview_logout.cshtml")" class="btn green ">Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+
+                        <li class="droddown dropdown-separator">
+                            <span class="separator"></span>
+                        </li>
+                        
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+        </div>
+
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"></div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+
+            <div class="page-sidebar-wrapper">
+                <div class="page-sidebar navbar-collapse collapse">
+
+                    <!-- BEGIN SIDEBAR MENU -->
+
+                    <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                        <li class="nav-item start ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-speedometer"></i>
+                                <span class="title">Dashboard</span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="fa fa-search-plus"></i>
+                                <span class="title">Manage Programs</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">Add New </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_metronic_grid.html" class="nav-link ">
+                                        <span class="title">Manage </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">Department</span>
+                                    </a>
+                                </li>
+
+
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="fa fa-warning"></i>
+                                <span class="title">Manage Risks</span>
+
+                            </a>
+
+                        </li>                        
+
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+
+                </div>
+            </div>
+            @RenderBody()
+        </div>
+
+    </div>
+    <!-- END CONTAINER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer">
+        <div class="page-footer-inner">
+            © 2018 <a target="_blank" href="http://canadahitech.com">CANADA HITECH</a>
+
+        </div>
+        <div class="scroll-to-top">
+            <i class="fa fa-arrow-circle-up"></i>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
